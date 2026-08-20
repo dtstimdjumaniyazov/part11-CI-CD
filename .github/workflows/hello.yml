@@ -1,4 +1,4 @@
-name: Exercise 3
+name: Ex-3-4
 
 on:
   push:
@@ -11,3 +11,9 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+      - name: Run date
+        run: |
+          "TZ='Asia/Tashkent' date"
+      - name: Run ls -l
+        run: |
+          "ls -l"
